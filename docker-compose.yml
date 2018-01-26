@@ -1,0 +1,19 @@
+version: '3.1'
+services:
+  web:
+    image: wordpress
+    links:
+      - mysql
+    environment:
+      - WORDPRESS_DB_PASSWORD=admin
+    ports:
+      - "8080:80"
+    volumes:
+      - ./:/var/www/html
+  mysql:
+    image: mysql:5.7
+    environment:
+      - MYSQL_ROOT_PASSWORD=admin
+      - MYSQL_DATABASE=wordpress
+    ports:
+      - "33061:3306"
