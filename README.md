@@ -1,10 +1,10 @@
 # WordPress with Docker
 This project is just an example how you can run WordPress in a Docker container environment
 
-## What do i need?
-First you will have to install the following applications:
+## What do I need?
+First, you will have to install the following applications:
 * [Docker](https://docs.docker.com/docker-for-windows/install/) - This is a Windows installation. You can also find
-documentations for other Operating Systems on there website as well.
+documentation for other Operating Systems on their website as well.
 
 ## How to run the development environment?
 After you successfully installed Docker, you might want to restart your computer, since there are some environment variables
@@ -20,7 +20,7 @@ If you don't want to see the containers log on `docker-compose up`, you can just
 run the docker as a daemon service, and the final command will look like this `docker-composer up -d`
 
 In your browser navigate to [127.0.0.1:8080](http://127.0.0.1:8080) or [localhost:8080](http://localhost:8080) and you should see the application.
-On first run, you will see the setup wizard from WordPress. In future we will have some type of database replication from QA
+On the first run, you will see the setup wizard from WordPress. In future, we will have some type of database replication from QA
 so this step will not be needed.
 
 # Any useful commands?
